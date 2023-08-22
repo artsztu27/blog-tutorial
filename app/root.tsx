@@ -1,4 +1,8 @@
-import type { LinksFunction, LoaderFunction } from "@remix-run/node";
+import type {
+  LinksFunction,
+  LoaderFunction,
+  V2_MetaFunction,
+} from "@remix-run/node";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import {
   Links,
@@ -23,6 +27,8 @@ import {
 
 import stylesheet from "~/styles/tailwind.css";
 import mainStyles from "~/styles/styles.css";
+
+export const meta: V2_MetaFunction = () => [{ title: "Tatung Kiukai" }];
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -57,6 +63,7 @@ function App() {
         <Meta />
         <Links />
         <NonFlashOfWrongThemeEls ssrTheme={Boolean(data.theme)} />
+        <link rel="icon" href="/assets/images/logo.jpg" />
       </head>
       <body className="bg-white text-black dark:bg-black  dark:text-white">
         <div className="flex min-h-screen flex-col">

@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-
+import AnimatedTextCharacter from "~/components/AnimatedTextCharacter";
+import { ImageView } from "~/components/ImageView";
 import {
-  textVariants,
   containerVariants,
   imageLoadAnimationProps,
 } from "~/config/animationConfig";
 
-// export const meta: V2_MetaFunction = () => [{ title: "Tatung Kiukai" }];
 export default function Index() {
   return (
     <div className="max-w-md:flex-col mx-0 my-[2em] flex min-h-[400px] flex-[1] items-center justify-center">
@@ -16,23 +15,8 @@ export default function Index() {
         animate="visible"
         className="max-w-md:flex-[0 max-w-md:pb-[2em] max-w-md:text-center flex-[1] px-[1em] py-0"
       >
-        <motion.h1
-          variants={textVariants}
-          className="mb-[0.5em] text-2xl font-bold leading-[1.3] md:text-4xl"
-        >
-          Welcome to your new Remix Blog
-        </motion.h1>
-        <motion.p variants={textVariants} className="text-lg md:text-xl">
-          Check out the codebase on{" "}
-          <a
-            href="https://github.com/rajeshbabu-oviva/remix-mdx-blog"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>{" "}
-          to get started.
-        </motion.p>
+        <AnimatedTextCharacter text="歡迎來到大同教會課輔班" />
+        <ImageView />
       </motion.div>
 
       <div className="mx-[1em] my-0 text-center">

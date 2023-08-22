@@ -1,11 +1,44 @@
 html {
   --text-colour: black;
   --background-colour: white;
-
   color: var(--text-colour);
   background-color: var(--background-colour);
 }
+
 html.dark {
   --text-colour: white;
   --background-colour: black;
 }
+
+.image-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.image-view-container .next,
+.image-view-container .prev {
+  top: calc(50% - 20px);
+  position: absolute;
+  background: white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+.image-view-container .next {
+  right: 10px;
+}
+.image-view-container .prev {
+  left: 10px;
+  transform: scale(-1);
+}
+
+/*# sourceMappingURL=styles.css.map */

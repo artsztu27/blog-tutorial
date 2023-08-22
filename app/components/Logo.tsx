@@ -8,8 +8,8 @@ export const Logo = () => {
       <motion.img
         alt="Tatung Logo"
         src="/assets/images/logo.png"
-        className="block w-[75px]"
-        width="75"
+        className="block w-[50px]"
+        width="50"
         height="50"
         variants={logoRotationVariant}
         animate="rotate"
