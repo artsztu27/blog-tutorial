@@ -1,7 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimatedTextCharacter = ({ text }: { text: string }) => {
+const AnimatedTextCharacter = ({
+  text,
+  className = "",
+}: {
+  text: string;
+  className?: string;
+}) => {
   // splitting text into letters
   const letters = Array.from(text);
 
@@ -44,6 +50,7 @@ const AnimatedTextCharacter = ({ text }: { text: string }) => {
       variants={container}
       initial="hidden"
       animate="visible"
+      className={className}
     >
       {letters.map((letter: string, index: number) => (
         <motion.span variants={child} key={index}>

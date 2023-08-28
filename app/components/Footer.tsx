@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="text-text-secondary dark:text-d-text-secondary mx-auto my-4 w-full max-w-7xl   px-8 pt-4 text-center text-[0.8rem]">
+    <footer className="text-text-secondary dark:text-d-text-secondary mx-auto my-4 flex w-full max-w-7xl   px-8 pt-4 text-center text-[0.8rem] ">
       <div className="flex flex-row items-center justify-start ">
         <div className="flex flex-col justify-start ">
           <div className="flex  ">地址：屏東市民族路750號</div>
@@ -21,12 +21,12 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <span className="items-center justify-center ">
+      <div className="items-center justify-center ">
         &copy; {new Date().getFullYear()}
         社團法人屏東縣都市原住民全人關懷發展協會.
         <br />
         &copy; All Rights Reserved.
-      </span>
+      </div>
     </footer>
   );
 };

@@ -15,7 +15,9 @@ html.dark {
   justify-content: center;
   align-items: center;
   position: relative;
-
+  .image-view-container > img {
+    max-width: 100%;
+  }
   .next,
   .prev {
     top: calc(50% - 20px);

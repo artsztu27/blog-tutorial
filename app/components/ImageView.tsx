@@ -1,28 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { images } from "~/components/image-data";
-
-const variants = {
-  enter: (direction: number) => {
-    return {
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 0,
-    };
-  },
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-  },
-  exit: (direction: number) => {
-    return {
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 0,
-    };
-  },
-};
 
 /**
  * Experimenting with distilling swipe offset and velocity into a single variable, so the
@@ -48,6 +27,16 @@ export const ImageView = () => {
     setPage([page + newDirection, newDirection]);
   };
 
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      setPage([page + 1, 1]);
+    }, 5000);
+
+    return () => {
+      timer && clearTimeout(timer);
+    };
+  }, [page]);
+
   return (
     <div className="image-view-container">
       <AnimatePresence initial={false} custom={direction}>
@@ -55,7 +44,6 @@ export const ImageView = () => {
           key={page}
           src={images[imageIndex]}
           custom={direction}
-          variants={variants}
           initial="enter"
           animate="center"
           exit="exit"
