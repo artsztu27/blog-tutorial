@@ -28,7 +28,7 @@ const NavLinks = () => {
       <NavLink to="/donate" className={activeStyleCallback}>
         我要捐款
       </NavLink>
-      <NavLink to="/blog" className={activeStyleCallback}>
+      <NavLink to="/story" className={activeStyleCallback}>
         協會大小事
       </NavLink>
     </>
@@ -91,7 +91,7 @@ const Nav = () => {
               </NavLink>
             </motion.div>
             <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
-              <NavLink to="/blog" className={activeStyleCallback}>
+              <NavLink to="/story" className={activeStyleCallback}>
                 協會大小事
               </NavLink>
             </motion.div>
