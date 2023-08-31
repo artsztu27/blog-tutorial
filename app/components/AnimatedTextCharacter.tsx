@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const AnimatedTextCharacter = ({
@@ -46,7 +45,7 @@ const AnimatedTextCharacter = ({
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+      style={{ display: "flex", fontSize: "2rem" }}
       variants={container}
       initial="hidden"
       animate="visible"

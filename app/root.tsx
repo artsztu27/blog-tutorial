@@ -28,7 +28,14 @@ import {
 import stylesheet from "~/styles/tailwind.css";
 import mainStyles from "~/styles/styles.css";
 
-export const meta: V2_MetaFunction = () => [{ title: "Tatung Kiukai" }];
+export const meta: V2_MetaFunction = () => [
+  { title: "Tatung Kiukai" },
+  {
+    tagName: "link",
+    rel: "icon",
+    href: "./assets/images/logo.jpg",
+  },
+];
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -63,7 +70,6 @@ function App() {
         <Meta />
         <Links />
         <NonFlashOfWrongThemeEls ssrTheme={Boolean(data.theme)} />
-        <link rel="icon" href="/assets/images/logo.jpg" />
       </head>
       <body className="bg-white text-black dark:bg-black  dark:text-white">
         <div className="flex min-h-screen flex-col">

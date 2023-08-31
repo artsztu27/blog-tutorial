@@ -1,5 +1,5 @@
 import { ImageContent } from "~/components/ImageContent";
-import { AboutUsContent } from "~/components/AboutUsContent";
+import { AboutUsContentCard } from "~/components/AboutUsContentCard";
 export default function Index() {
   return (
     <div className="  mx-0 my-[2em] flex min-h-[300px] flex-[1] flex-col items-center justify-center">
@@ -7,7 +7,7 @@ export default function Index() {
         <ImageContent />
       </div>
       <div className="mx-0	 my-[2em]  flex w-full flex-[1] flex-col items-center">
-        <AboutUsContent />
+        <AboutUsContentCard />
       </div>
     </div>
   );
