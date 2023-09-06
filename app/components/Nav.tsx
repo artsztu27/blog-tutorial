@@ -22,9 +22,9 @@ const NavLinks = () => {
       <NavLink to="/know" className={activeStyleCallback}>
         認識協會
       </NavLink>
-      <NavLink to="/introduction" className={activeStyleCallback}>
+      {/*  <NavLink to="/introduction" className={activeStyleCallback}>
         服務介紹
-      </NavLink>
+      </NavLink> */}
       <NavLink to="/donate" className={activeStyleCallback}>
         我要捐款
       </NavLink>
@@ -80,11 +80,11 @@ const Nav = () => {
                 認識協會
               </NavLink>
             </motion.div>
-            <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
+            {/* <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
               <NavLink to="/introduction" className={activeStyleCallback}>
                 服務介紹
               </NavLink>
-            </motion.div>
+            </motion.div> */}
             <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
               <NavLink to="/donate" className={activeStyleCallback}>
                 我要捐款
