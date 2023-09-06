@@ -19,6 +19,7 @@
     "validate": "run-p \"test -- --run\" lint typecheck test:e2e:run",
     "sass": "sass --watch app/:app/"
   },
+  "homepage": "https://artsztu27.github.io/tatungkiukai",
   "prettier": {},
   "eslintIgnore": [
     "/node_modules",
