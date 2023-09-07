@@ -13,8 +13,7 @@ export default function Donate() {
         <div className="h-72 w-full rounded-lg bg-white px-4 py-8 shadow-lg sm:mx-2 sm:w-1/3 lg:mx-6	">
           <div className="h-24">
             <img
-              src="https://tailwindcss-templates.netlify.com/fair-rate-mortgage/images/icon-home-2.svg
-"
+              src="/assets/images/icon-home-2.svg"
               alt=""
               className="mx-auto"
             />
@@ -27,8 +26,7 @@ export default function Donate() {
         <div className="h-72 w-full rounded-lg bg-white px-4 py-8 shadow-lg sm:mx-2 sm:w-1/3 lg:mx-6	">
           <div className="h-24">
             <img
-              src="https://tailwindcss-templates.netlify.com/fair-rate-mortgage/images/icon-home-3.svg
-"
+              src="/assets/images/icon-home-3.svg"
               alt=""
               className="mx-auto"
             />
