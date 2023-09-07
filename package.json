@@ -4,6 +4,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
+    "build:prod": "prisma generate && remix build",
     "dev": "concurrently \"npm run sass\" \"remix dev\"",
     "dev:serve": "binode --require ./mocks -- @remix-run/serve:remix-serve ./build",
     "format": "prettier --write .",
