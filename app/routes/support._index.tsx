@@ -8,7 +8,7 @@ export const loader = async () => {
 
 export default function Donate() {
   return (
-    <section className="xxl:px-40 flex flex-col bg-gray-100 px-4 py-16 text-center md:px-8 lg:px-16 xl:px-24">
+    <div className="xxl:px-40 flex flex-col bg-gray-100 px-4 py-16 text-center md:px-8 lg:px-16 xl:px-24">
       <div className="mt-12 items-start justify-around sm:-mx-2 sm:flex">
         <div className="h-72 w-full rounded-lg bg-white px-4 py-8 shadow-lg sm:mx-2 sm:w-1/3 lg:mx-6	">
           <div className="h-24">
@@ -41,6 +41,6 @@ export default function Donate() {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
