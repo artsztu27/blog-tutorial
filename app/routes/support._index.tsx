@@ -1,11 +1,3 @@
-import { json } from "@remix-run/node";
-import { Link } from "@remix-run/react";
-import { getPosts } from "~/models/post.server";
-
-export const loader = async () => {
-  return json({ posts: await getPosts() });
-};
-
 export default function Donate() {
   return (
     <div className="xxl:px-40 flex flex-col bg-gray-100 px-4 py-16 text-center md:px-8 lg:px-16 xl:px-24">
